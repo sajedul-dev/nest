@@ -4,19 +4,921 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nest</title>
-    <!-- ------------- css ------------->
+    <link rel="icon" href="images/logo.svg">
+    <!-------- slick slider css download link ----->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- ---------- css --------->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-    <nav>
-        <ul class="flex bg-red-900 space-x-10 py-3 capitalize justify-end px-6 font-mono text-base text-white">
-            <li><a class="hover:text-blue-700" href="#">home</a></li>
-            <li><a class="hover:text-blue-700" href="#">about</a></li>
-            <li><a class="hover:text-blue-700" href="#">service</a></li>
-            <li><a class="hover:text-blue-700" href="#">testimonial</a></li>
-        </ul>
+    <!-- ---------------------- header part start here --------------------  -->
+
+    <header class="py-4 border-b-2 border-gray-300">
+        <div class="header_wrapper container mx-auto sm:flex justify-between items-center capitalize text-gray-500">
+            <div class="sm:flex sm:gap-x-5">
+                <a href="#">about us</a>
+                <a href="#">my account</a>
+                <a href="#">whishlist</a>
+                <a href="#">order tracking</a>
+            </div>
+            <div>
+                <h3>Supper Value Deals - Save more with coupons</h3>
+            </div>
+            <div class="sm:flex gap-x-3">
+                <h2>Need help? Call Us: <span class="text-green-600 sm:font-bold">+ 1800 900</span></h2>
+                <ul class="sm:flex gap-x-4">
+                    <li class="relative ease-in duration-300">
+                        <a href="#">english <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown bg-red-300 px-3 py-3 absolute top-5 left-0 opacity-0 hover:opacity-100">
+                            <li><a href=#>bangla</a></li>
+                            <li><a href=#>hindi</a></li>
+                            <li><a href=#>kuet</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">usd <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="dropdown bg-red-300 px-3 py-3 absolute top-5 left-0 opacity-0">
+                                <li><a href="#">taka</a></li>
+                                <li><a href="#">ruppe</a></li>
+                                <li><a href="#">dinnar</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ------------------------ navbar start here ------------------------ -->
+
+    <nav class="py-6 border-b-2 border-gray-300">
+        <div class="nav_wrapper container mx-auto sm:flex items-center justify-between">
+            <div>
+                <picture>
+                    <img src="images/logo.svg" alt="logo">
+                </picture>
+            </div>
+            <div>
+                <form action="">
+                    <input class=" border-2 border-gray-300 block mx-auto sm:w-[500px] w-5/6 py-2 px-2" placeholder="search for items..." type="search">
+                </form>
+            </div>
+            <div>
+                <ul class="sm:flex text-center gap-x-5 capitalize">
+                    <li><a class="text-xl" href="#"><i class="fa-solid fa-location-dot text-2xl"></i> your location</a></li>
+                    <li><a class="text-xl" href="#"><i class="fa-solid fa-spinner text-2xl"></i> compare</a></li>
+                    <li><a class="text-xl" href="#"><i class="fa-solid fa-heart text-2xl"></i> wishlist </a></li>
+                    <li><a class="text-xl" href="#"><i class="fa-solid fa-cart-shopping text-2xl"></i> cart</a></li>
+                    <li><a class="text-xl" href="#"><i class="fa-solid fa-user text-2xl"></i> accout </a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
+    <!-- ------------------------ inner nav start here --------------------- -->
+
+    <section class="py-4 innver_nav border-b-2 border-gray-300">
+        <div class="mx-auto container flex justify-between items-center">
+            <div>
+                <ul class="md:flex gap-x-10 capitalize text-lg font-semibold">
+                    <li><a href="#">browse all categories <i class="fa-solid fa-chevron-down"></i> </a></li>
+                    <li><a href="#">deals </a></li>
+                    <li><a href="#">home <i class="fa-solid fa-chevron-down"></i> </a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">shop <i class="fa-solid fa-chevron-down"></i> </a></li>
+                    <li><a href="#">verdors <i class="fa-solid fa-chevron-down"></i> </a></li>
+                    <li><a href="#">mega menu  <i class="fa-solid fa-chevron-down"></i> </a></li>
+                    <li><a href="#">blog <i class="fa-solid fa-chevron-down"></i> </a></li>
+                    <li><a href="#">pages <i class="fa-solid fa-chevron-down"></i> </a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-x-3">
+                <picture>
+                    <i class="fa-solid fa-headphones-simple text-3xl"></i>
+                </picture>
+                <div>
+                    <span class="text-4xl font-bold text-green-600">1900-888</span>
+                    <h4>24/7 Support Center</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------ banner start here ------------------------ -->
+
+    <main class="py-4">
+        <div class="mx-auto container">
+            <div>
+                <div>
+                    <picture class="bg-cover bg_wrapper flex">
+                        <!-- <div class="absolute px-10 capitalize mt-10">
+                            <h1 class="font-semibold text-[70px] ">dont't miss amazing <br> grocery deals </h1>
+                            <h4 class="text-3xl text-gray-500 pt-4">sign up for the daily newspaper</h4>
+                            <input class="w-[350px] h-[60px] px-3 pl-5 block mt-8 rounded-full capitalize " placeholder="your email address" type="text">
+                        </div> -->
+                        <img class="rounded-3xl" src="images/slider-1.png" alt="slider">
+                        <img class="rounded-3xl" src="images/slider-2.png" alt="slider">
+                    </picture>
+                </div>
+                <div class="banner_arrow flex items-center justify-between cursor-pointer">
+                    <div class="left h-10 w-10 flex items-center justify-center rounded-full bg-red-400 transition duration-300 hover:bg-green-500"><i class="fa-solid fa-chevron-left text-white"></i>
+                    </div>
+                    <div class="right h-10 w-10 flex items-center justify-center rounded-full bg-red-400 transition duration-300 hover:bg-green-500"><i class="fa-solid fa-chevron-right text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!------------------------ categories part start here -------------------->
+
+    <section class="py-4">
+        <div class="container mx-auto">
+            <div class=" cat_wrapper grid sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10 gap-3">
+                <div class="flex items-center justify-center flex-col bg-red-400 rounded-lg py-4 px-2">
+                    <picture class=""> <img src="images/cat-1.png" alt="#"></picture>
+                    <h4 class="text-xl">Back plum</h4>
+                    <p>123 items </p>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-red-400 rounded-xl py-4 px-2">
+                    <picture class=""> <img src="images/cat-2.png" alt="#"></picture>
+                    <h4 class="text-xl">Back plum</h4>
+                    <p>123 items </p>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-red-400 rounded-xl py-4 px-2">
+                    <picture class=""> <img src="images/cat-3.png" alt="#"></picture>
+                    <h4 class="text-xl">Back plum</h4>
+                    <p>123 items </p>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-red-400 rounded-xl py-4 px-2">
+                    <picture class=""> <img src="images/cat-4.png" alt="#"></picture>
+                    <h4 class="text-xl">Back plum</h4>
+                    <p>123 items </p>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-red-400 rounded-xl py-4 px-2">
+                    <picture class=""> <img src="images/cat-5.png" alt="#"></picture>
+                    <h4 class="text-xl">Back plum</h4>
+                    <p>123 items </p>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-red-400 rounded-xl py-4 px-2">
+                    <picture class=""> <img src="images/cat-9.png" alt="#"></picture>
+                    <h4 class="text-xl">Back plum</h4>
+                    <p>123 items </p>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-red-400 rounded-xl py-4 px-2">
+                    <picture class=""> <img src="images/cat-12.png" alt="#"></picture>
+                    <h4 class="text-xl">Back plum</h4>
+                    <p>123 items </p>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-red-400 rounded-xl py-4 px-2">
+                    <picture class=""> <img src="images/cat-13.png" alt="#"></picture>
+                    <h4 class="text-xl">Back plum</h4>
+                    <p>123 items </p>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-red-400 rounded-xl py-4 px-2">
+                    <picture class=""> <img src="images/cat-14.png" alt="#"></picture>
+                    <h4 class="text-xl">Back plum</h4>
+                    <p>123 items </p>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-red-400 rounded-xl py-4 px-2">
+                    <picture class=""> <img src="images/cat-15.png" alt="#"></picture>
+                    <h4 class="text-xl">Back plum</h4>
+                    <p>123 items </p>
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 py-4 relative">
+                <picture>
+                    <div class="sub_content absolute left-7 top-16 p-6">
+                        <h1 class="text-3xl pb-6 capitalize">everyday fresh & <br> clean with our <br> product</h1>
+                        <a class="py-2 px-5 capitalize text-xl bg-green-400 hover:px-8 rounded-md" href="#">shop now <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
+                    <img src="images/banner-1.png" alt="banner">
+                </picture>
+                <picture>
+                    <div class="sub_content absolute left-7 top-16 p-6">
+                        <h1 class="text-3xl pb-6 capitalize">everyday fresh & <br> clean with our <br> product</h1>
+                        <a class="py-2 px-5 capitalize text-xl bg-green-400 hover:px-8 rounded-md" href="#">shop now <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
+                    <img src="images/banner-2.png" alt="banner">
+                </picture>
+                <picture>
+                    <div class="sub_content absolute left-7 top-16 p-6">
+                        <h1 class="text-3xl pb-6 capitalize">everyday fresh & <br> clean with our <br> product</h1>
+                        <a class="py-2 px-5 capitalize text-xl bg-green-400 hover:px-8 rounded-md" href="#">shop now <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
+                    <img src="images/banner-3.png" alt="banner">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------- product part start here ------------------------>
+
+    <section class="py-4"> <br>
+        <div class="container mx-auto">
+            <div class="product_heading flex justify-between items-center py-4">
+                <h1 class="text-4xl capitalize font-semibold">popular porduct</h1>
+                <div class="mixit_up_menu sm:flex gap-6 text-2xl capitalize cursor-pointer">
+                    <p>all</p>
+                    <p>Milk and dairies</p>
+                    <p>Coffes & Teas</p>
+                    <p>Pet foods</p>
+                    <p>Meates</p>
+                    <p>vagetable</p>
+                    <p>fruits</p>
+                </div>
+            </div>
+            <div class="product_wrapper py-6 grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+                <div class="flex flex-col border-2 order-green-600 rounded-lg py-2 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <picture>
+                        <img src="images/product-1-1.jpg" alt="img ">
+                    </picture>
+                    <p>meates</p>
+                    <h1 class="text-xl">Canada Dry Ginger Ale <br> 2 L Bottle - 200ml - 400g</h1>
+                    <div class="star flex gap-2">
+                        <span class="text-amber-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <p> (4.) </p>
+                    </div>
+                    <h2 class="text-lg">By NestFood</h2>
+                    <div class="price flex items-center gap-2">
+                        <span class="text-green-500 font-bold text-lg">$32.85</span>
+                        <del class="text-gray-400 font-semibold"> $55.8 </del>
+                        <a class="text-sm px-4 py-2 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 order-green-600 rounded-lg py-2 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <picture>
+                        <img src="images/product-2-1.jpg" alt="img ">
+                    </picture>
+                    <p>meates</p>
+                    <h1 class="text-xl">Canada Dry Ginger Ale <br> 2 L Bottle - 200ml - 400g</h1>
+                    <div class="star flex gap-2">
+                        <span class="text-amber-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <p> (4.) </p>
+                    </div>
+                    <h2 class="text-lg">By NestFood</h2>
+                    <div class="price flex items-center gap-2">
+                        <span class="text-green-500 font-bold text-lg">$32.85</span>
+                        <del class="text-gray-400 font-semibold"> $55.8 </del>
+                        <a class="text-sm px-4 py-2 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 order-green-600 rounded-lg py-2 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <picture>
+                        <img src="images/product-3-1.jpg" alt="img ">
+                    </picture>
+                    <p>meates</p>
+                    <h1 class="text-xl">Canada Dry Ginger Ale <br> 2 L Bottle - 200ml - 400g</h1>
+                    <div class="star flex gap-2">
+                        <span class="text-amber-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <p> (4.) </p>
+                    </div>
+                    <h2 class="text-lg">By NestFood</h2>
+                    <div class="price flex items-center gap-2">
+                        <span class="text-green-500 font-bold text-lg">$32.85</span>
+                        <del class="text-gray-400 font-semibold"> $55.8 </del>
+                        <a class="text-sm px-4 py-2 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 order-green-600 rounded-lg py-2 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <picture>
+                        <img src="images/product-4-1.jpg" alt="img ">
+                    </picture>
+                    <p>meates</p>
+                    <h1 class="text-xl">Canada Dry Ginger Ale <br> 2 L Bottle - 200ml - 400g</h1>
+                    <div class="star flex gap-2">
+                        <span class="text-amber-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <p> (4.) </p>
+                    </div>
+                    <h2 class="text-lg">By NestFood</h2>
+                    <div class="price flex items-center gap-2">
+                        <span class="text-green-500 font-bold text-lg">$32.85</span>
+                        <del class="text-gray-400 font-semibold"> $55.8 </del>
+                        <a class="text-sm px-4 py-2 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 order-green-600 rounded-lg py-2 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <picture>
+                        <img src="images/product-5-1.jpg" alt="img ">
+                    </picture>
+                    <p>meates</p>
+                    <h1 class="text-xl">Canada Dry Ginger Ale <br> 2 L Bottle - 200ml - 400g</h1>
+                    <div class="star flex gap-2">
+                        <span class="text-amber-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <p> (4.) </p>
+                    </div>
+                    <h2 class="text-lg">By NestFood</h2>
+                    <div class="price flex items-center gap-2">
+                        <span class="text-green-500 font-bold text-lg">$32.85</span>
+                        <del class="text-gray-400 font-semibold"> $55.8 </del>
+                        <a class="text-sm px-4 py-2 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 order-green-600 rounded-lg py-2 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <picture>
+                        <img src="images/product-6-1.jpg" alt="img ">
+                    </picture>
+                    <p>meates</p>
+                    <h1 class="text-xl">Canada Dry Ginger Ale <br> 2 L Bottle - 200ml - 400g</h1>
+                    <div class="star flex gap-2">
+                        <span class="text-amber-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <p> (4.) </p>
+                    </div>
+                    <h2 class="text-lg">By NestFood</h2>
+                    <div class="price flex items-center gap-2">
+                        <span class="text-green-500 font-bold text-lg">$32.85</span>
+                        <del class="text-gray-400 font-semibold"> $55.8 </del>
+                        <a class="text-sm px-4 py-2 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 order-green-600 rounded-lg py-2 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <picture>
+                        <img src="images/product-1-1.jpg" alt="img ">
+                    </picture>
+                    <p>meates</p>
+                    <h1 class="text-xl">Canada Dry Ginger Ale <br> 2 L Bottle - 200ml - 400g</h1>
+                    <div class="star flex gap-2">
+                        <span class="text-amber-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <p> (4.) </p>
+                    </div>
+                    <h2 class="text-lg">By NestFood</h2>
+                    <div class="price flex items-center gap-2">
+                        <span class="text-green-500 font-bold text-lg">$32.85</span>
+                        <del class="text-gray-400 font-semibold"> $55.8 </del>
+                        <a class="text-sm px-4 py-2 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 order-green-600 rounded-lg py-2 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <picture>
+                        <img src="images/product-2-1.jpg" alt="img ">
+                    </picture>
+                    <p>meates</p>
+                    <h1 class="text-xl">Canada Dry Ginger Ale <br> 2 L Bottle - 200ml - 400g</h1>
+                    <div class="star flex gap-2">
+                        <span class="text-amber-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <p> (4.) </p>
+                    </div>
+                    <h2 class="text-lg">By NestFood</h2>
+                    <div class="price flex items-center gap-2">
+                        <span class="text-green-500 font-bold text-lg">$32.85</span>
+                        <del class="text-gray-400 font-semibold"> $55.8 </del>
+                        <a class="text-sm px-4 py-2 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 order-green-600 rounded-lg py-2 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <picture>
+                        <img src="images/product-3-1.jpg" alt="img ">
+                    </picture>
+                    <p>meates</p>
+                    <h1 class="text-xl">Canada Dry Ginger Ale <br> 2 L Bottle - 200ml - 400g</h1>
+                    <div class="star flex gap-2">
+                        <span class="text-amber-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <p> (4.) </p>
+                    </div>
+                    <h2 class="text-lg">By NestFood</h2>
+                    <div class="price flex items-center gap-2">
+                        <span class="text-green-500 font-bold text-lg">$32.85</span>
+                        <del class="text-gray-400 font-semibold"> $55.8 </del>
+                        <a class="text-sm px-4 py-2 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 order-green-600 rounded-lg py-2 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <picture>
+                        <img src="images/product-4-1.jpg" alt="img ">
+                    </picture>
+                    <p>meates</p>
+                    <h1 class="text-xl">Canada Dry Ginger Ale <br> 2 L Bottle - 200ml - 400g</h1>
+                    <div class="star flex gap-2">
+                        <span class="text-amber-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <p> (4.) </p>
+                    </div>
+                    <h2 class="text-lg">By NestFood</h2>
+                    <div class="price flex items-center gap-2">
+                        <span class="text-green-500 font-bold text-lg">$32.85</span>
+                        <del class="text-gray-400 font-semibold"> $55.8 </del>
+                        <a class="text-sm px-4 py-2 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------ sells part start here ------------------------>
+
+    <section class="py-4">
+        <div class="container mx-auto">
+            <div class="product_heading flex justify-between items-center py-6">
+                <h1 class="text-4xl capitalize font-semibold">daily best sells</h1>
+                <div class="mixit_up_menu flex gap-6 text-2xl capitalize cursor-pointer">
+                    <p>features</p>
+                    <p>popular</p>
+                    <p>new added</p>
+                </div>
+            </div>
+            <!-- <div class="relative">
+                <picture>
+                    <div class=" text-white absolute left-7 top-16 p-6">
+                        <h1 class="text-3xl pb-10 capitalize">Bring nature <br> into your <br> home </h1>
+                        <a class="py-2 px-5 capitalize text-xl bg-green-400 hover:px-8 rounded-md" href="#">shop now <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
+                    <img src="images/sels.jpg" alt="img ">
+                </picture>
+            </div> -->
+            <div class="sels_main grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="sels_wrapper flex flex-col  border-2 order-green-600 rounded-lg py-6 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+                    <picture>
+                        <img src="images/product-1-1.jpg" alt="img ">
+                    </picture>
+                        <p>Hodo foods</p>
+                        <h1 class="text-xl font-semibold">All Natural Italian-Style <br> Chicken Meatballs</h1>
+                        <span class="text-green-500 font-bold text-lg">$32.85</span>
+                        <del class="text-gray-400 font-semibold"> $55.8 </del>
+                        <h4>sold : 90/120 </h4>
+                        <a class=" text-white text-center text-sm px-4 py-3 bg-green-500 hover:bg-yellow-400 rounded-sm transition" href="#"><i class="text-white fa-solid fa-cart-shopping"></i> Add</a>
+                </div>
+                <div class="sels_wrapper flex flex-col  border-2 order-green-600 rounded-lg py-6 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+                    <picture>
+                        <img src="images/product-2-1.jpg" alt="img ">
+                    </picture>
+                    <p>Hodo foods</p>
+                    <h1 class="text-xl font-semibold">All Natural Italian-Style <br> Chicken Meatballs</h1>
+                    <span class="text-green-500 font-bold text-lg">$32.85</span>
+                    <del class="text-gray-400 font-semibold"> $55.8 </del>
+                    <h4>sold : 90/120 </h4>
+                    <a class=" text-white text-center text-sm px-4 py-3 bg-green-500 hover:bg-yellow-400 rounded-sm transition" href="#"><i class="text-white fa-solid fa-cart-shopping"></i> Add</a>
+                </div>
+                <div class="sels_wrapper flex flex-col  border-2 order-green-600 rounded-lg py-6 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+                    <picture>
+                        <img src="images/product-3-1.jpg" alt="img ">
+                    </picture>
+                    <p>Hodo foods</p>
+                    <h1 class="text-xl font-semibold">All Natural Italian-Style <br> Chicken Meatballs</h1>
+                    <span class="text-green-500 font-bold text-lg">$32.85</span>
+                    <del class="text-gray-400 font-semibold"> $55.8 </del>
+                    <h4>sold : 90/120 </h4>
+                    <a class=" text-white text-center text-sm px-4 py-3 bg-green-500 hover:bg-yellow-400 rounded-sm transition" href="#"><i class="text-white fa-solid fa-cart-shopping"></i> Add</a>
+                </div>
+                <div class="sels_wrapper flex flex-col  border-2 order-green-600 rounded-lg py-6 px-4 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+                    <picture>
+                        <img src="images/product-4-1.jpg" alt="img ">
+                    </picture>
+                    <p>Hodo foods</p>
+                    <h1 class="text-xl font-semibold">All Natural Italian-Style <br> Chicken Meatballs</h1>
+                    <span class="text-green-500 font-bold text-lg">$32.85</span>
+                    <del class="text-gray-400 font-semibold"> $55.8 </del>
+                    <h4>sold : 90/120 </h4>
+                    <a class=" text-white text-center text-sm px-4 py-3 bg-green-500 hover:bg-yellow-400 rounded-sm transition" href="#"><i class="text-white fa-solid fa-cart-shopping"></i> Add</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------- deals part start here ------------------------>
+
+    <section class="py-6">
+        <div class="container mx-auto ">
+            <h1 class="text-2xl font-semibold">Deals Of The Day</h1>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
+                <div class="deals_main relative py-4">
+                    <picture>
+                        <img src="images/deals1.png" alt="img">
+                    </picture>
+                    <div class="absolute left-0 top-2/4">
+                        <div class="flex text-center justify-center gap-1 mb-4">
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">30</span>
+                                <h2 class="text-xl">Days</h2>
+                            </div>
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">60</span>
+                                <h2 class="text-xl">Hours</h2>
+                            </div>
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">50</span>
+                                <h2 class="text-xl">Minutes</h2>
+                            </div>
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">60</span>
+                                <h2 class="text-xl">Seconds</h2>
+                            </div>
+                        </div>
+                        <div class="py-4 px-8 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                            <h2 class="text-2xl py-8">Seeds of Change Organic Quinoa, Brown, & Red Rice</h2>
+                            <div>
+                                <div class="star flex gap-2 py-3">
+                                    <span class="text-amber-500">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p> (4.0) </p>
+                                </div>            
+                                <p class="py-2 capitalize text-lg">by<span class="text-green-400 font-semibold">old passo</span></p>
+                                <span class="text-green-500 font-bold text-lg">$32.85</span>
+                                <del class="text-gray-400 font-semibold text-xl"> $55.8 </del>
+                                <a class="text-sm px-6 py-2 ml-4 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+                <div class="deals_main relative py-4">
+                    <picture>
+                        <img src="images/deals2.png" alt="img">
+                    </picture>
+                    <div class="absolute left-0 top-2/4">
+                        <div class="flex text-center justify-center gap-1 mb-4">
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">30</span>
+                                <h2 class="text-xl">Days</h2>
+                            </div>
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">60</span>
+                                <h2 class="text-xl">Hours</h2>
+                            </div>
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">50</span>
+                                <h2 class="text-xl">Minutes</h2>
+                            </div>
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">60</span>
+                                <h2 class="text-xl">Seconds</h2>
+                            </div>
+                        </div>
+                        <div class="py-4 px-8 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                            <h2 class="text-2xl py-8">Perdue Simply Smart Organics Gluten Free</h2>
+                            <div>
+                                <div class="star flex gap-2 py-3">
+                                    <span class="text-amber-500">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p> (4.0) </p>
+                                </div>            
+                                <p class="py-2 capitalize text-lg">by<span class="text-green-400 font-semibold">old passo</span></p>
+                                <span class="text-green-500 font-bold text-lg">$32.85</span>
+                                <del class="text-gray-400 font-semibold text-xl"> $55.8 </del>
+                                <a class="text-sm px-6 py-2 ml-4 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+                <div class="deals_main relative py-4">
+                    <picture>
+                        <img src="images/deals3.png" alt="img">
+                    </picture>
+                    <div class="absolute left-0 top-2/4">
+                        <div class="flex text-center justify-center gap-1 mb-4">
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">30</span>
+                                <h2 class="text-xl">Days</h2>
+                            </div>
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">60</span>
+                                <h2 class="text-xl">Hours</h2>
+                            </div>
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">50</span>
+                                <h2 class="text-xl">Minutes</h2>
+                            </div>
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">60</span>
+                                <h2 class="text-xl">Seconds</h2>
+                            </div>
+                        </div>
+                        <div class="py-4 px-8 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                            <h2 class="text-2xl py-8">Signature Wood-Fired Mushroom and Caramelized</h2>
+                            <div>
+                                <div class="star flex gap-2 py-3">
+                                    <span class="text-amber-500">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p> (4.0) </p>
+                                </div>            
+                                <p class="py-2 capitalize text-lg">by<span class="text-green-400 font-semibold">old passo</span></p>
+                                <span class="text-green-500 font-bold text-lg">$32.85</span>
+                                <del class="text-gray-400 font-semibold text-xl"> $55.8 </del>
+                                <a class="text-sm px-6 py-2 ml-4 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+                <div class="deals_main relative py-4">
+                    <picture>
+                        <img src="images/deals4.png" alt="img">
+                    </picture>
+                    <div class="absolute left-0 top-2/4">
+                        <div class="flex text-center justify-center gap-1 mb-4">
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">30</span>
+                                <h2 class="text-xl">Days</h2>
+                            </div>
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">60</span>
+                                <h2 class="text-xl">Hours</h2>
+                            </div>
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">50</span>
+                                <h2 class="text-xl">Minutes</h2>
+                            </div>
+                            <div class="counter bg-white py-2 px-3">
+                                <span class="text-green-400 font-semibold">60</span>
+                                <h2 class="text-xl">Seconds</h2>
+                            </div>
+                        </div>
+                        <div class="py-4 px-8 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                            <h2 class="text-2xl py-8">Simply Lemonade with  Raspberry Juice</h2>
+                            <div>
+                                <div class="star flex gap-2 py-3">
+                                    <span class="text-amber-500">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p> (4.0) </p>
+                                </div>            
+                                <p class="py-2 capitalize text-lg">by<span class="text-green-400 font-semibold">old passo</span></p>
+                                <span class="text-green-500 font-bold text-lg">$32.85</span>
+                                <del class="text-gray-400 font-semibold text-xl"> $55.8 </del>
+                                <a class="text-sm px-6 py-2 ml-4 bg-green-300 hover:bg-green-600 rounded-sm" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------- top sell part start here ---------------------->
+
+    <section class="py-10">
+        <div class="container mx-auto pt-40">
+            <div class="product_heading flex justify-between items-center text-2xl font-semibold py-4 border-b-2 border-gray-400">
+                <h1>Top selling</h1>
+                <h1>Trending Products</h1>
+                <h1>Recently added</h1>
+                <h1>Top Rated</h1>
+        </div>
+    </section>
+
+    <!------------------- 2nd banner section start here -------------------->
+
+    <main class="py-4">
+        <div class="mx-auto container">
+            <div class="flex justify-between items-center bg-green-300 py-4 px-3">
+                <div class=" px-10 capitalize mt-10">
+                    <h1 class="font-semibold text-[70px] ">Stay home & get your daily needs from our shop </h1>
+                    <h4 class="text-xl text-gray-500 pt-4"> Start You'r Daily Shopping with <span class="text-green-500">Nest Mart</span> </h4>
+                    <input class="w-[350px] h-[60px] px-3 pl-5 block mt-8 rounded-full capitalize " placeholder=" your email address" type="text">
+                </div>
+                <picture>
+                    <img class="rounded-3xl" src="images/banner-9.png" alt="slider">
+                </picture>
+            </div>
+            <div class="grid sm:grid-cols-3 lg:grid-cols-5 gap-2">
+                <div class="flex gap-2 py-4 px-3 mt-4 rounded-lg items-center bg-gray-100">
+                    <picture>
+                        <img src="images/icon-1.svg" alt="img">
+                    </picture>
+                    <div>
+                        <h1 class="text-xl">Best prices & offers</h1>
+                        <p class="text-lg text-gray-400 font-semibold">Orders $50 or more</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 py-4 px-3 mt-4 rounded-lg items-center bg-gray-100">
+                    <picture>
+                        <img src="images/icon-2.svg" alt="img">
+                    </picture>
+                    <div>
+                        <h1 class="text-xl">Best prices & offers</h1>
+                        <p class="text-lg text-gray-400 font-semibold">Orders $50 or more</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 py-4 px-3 mt-4 rounded-lg items-center bg-gray-100">
+                    <picture>
+                        <img src="images/icon-3.svg" alt="img">
+                    </picture>
+                    <div>
+                        <h1 class="text-xl">Best prices & offers</h1>
+                        <p class="text-lg text-gray-400 font-semibold">Orders $50 or more</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 py-4 px-3 mt-4 rounded-lg items-center bg-gray-100">
+                    <picture>
+                        <img src="images/icon-4.svg" alt="img">
+                    </picture>
+                    <div>
+                        <h1 class="text-xl">Best prices & offers</h1>
+                        <p class="text-lg text-gray-400 font-semibold">Orders $50 or more</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 py-4 px-3 mt-4 rounded-lg items-center bg-gray-100">
+                    <picture>
+                        <img src="images/icon-5.svg" alt="img">
+                    </picture>
+                    <div>
+                        <h1 class="text-xl">Best prices & offers</h1>
+                        <p class="text-lg text-gray-400 font-semibold">Orders $50 or more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!---------------------- footer part start here ---------------------->
+
+    <footer class="py-4">
+        <div class="container mx-auto gap-3 pb-10 grid sm:grid-cols-3 lg:grid-cols-6 border-b-2 border-gray-300">
+            <div class="flex flex-col text-gray-500 capitalize gap-y-1">
+                <picture>
+                    <img src="images/logo.svg" alt="not-found">
+                </picture>
+                <h1 class="py-4">Awesome grocery store website template</h1>
+                <h1> <span class="font-bold text-lg text-black">Address:</span> 5171 W Campbell Ave undefined Kent, Utah 53127 United States</h1>
+                <a target="_blank" href="cel:540-025-124553"> <span class="font-bold text-lg text-black">call us:</span> -540-025-124553 </a>
+                <a target="_blank" href="emailto:sale@Nest.com"><span class="font-bold text-lg text-black">Email:</span>sale@Nest.com </a>
+                <a href="#"> <span class="font-bold text-lg text-black">Hours:</span>10:00 - 18:00, Mon - Sat</a>
+            </div>
+            <div class="flex flex-col text-gray-500 capitalize gap-y-2">
+                <h1 class="text-xl font-semibold pb-4 text-black">comphany</h1>
+                <a href="#">about us</a>
+                <a href="#">delivery information</a>
+                <a href="#">privacy policy</a>
+                <a href="#">terms & condition</a>
+                <a href="#">contact us</a>
+                <a href="#">support center</a>
+                <a href="#">careers</a>
+            </div>
+            <div class="flex flex-col text-gray-500 capitalize gap-y-2">
+                <h1 class="text-xl font-semibold pb-4 text-black">account</h1>
+                <a href="#">about us</a>
+                <a href="#">delivery information</a>
+                <a href="#">privacy policy</a>
+                <a href="#">terms & condition</a>
+                <a href="#">contact us</a>
+                <a href="#">support center</a>
+                <a href="#">careers</a>
+            </div>
+            <div class="flex flex-col text-gray-500 capitalize gap-y-2">
+                <h1 class="text-xl font-semibold pb-4 text-black">corporate</h1>
+                <a href="#">about us</a>
+                <a href="#">delivery information</a>
+                <a href="#">privacy policy</a>
+                <a href="#">terms & condition</a>
+                <a href="#">contact us</a>
+                <a href="#">support center</a>
+                <a href="#">careers</a>
+            </div>
+            <div class="flex flex-col text-gray-500 capitalize gap-y-2">
+                <h1 class="text-xl font-semibold pb-4 text-black">popular</h1>
+                <a href="#">about us</a>
+                <a href="#">delivery information</a>
+                <a href="#">privacy policy</a>
+                <a href="#">terms & condition</a>
+                <a href="#">contact us</a>
+                <a href="#">support center</a>
+                <a href="#">careers</a>
+            </div>
+            <div class="flex flex-col text-gray-500 capitalize gap-y-2">
+                <h1 class="text-xl font-semibold pb-4 text-black">install app </h1>
+                <h2 class="py-4">From App Store or Google Play</h2>
+                <div class="flex gap-2 text-white">
+                    <a class="py-3 px-3 text-sm bg-black rounded-md hover:bg-green-600 transition" href="#"> <i class=" px-1 fa-brands fa-apple"></i> App store</a>
+                    <a class="py-3 px-3 text-sm bg-black rounded-md hover:bg-green-600 transition" href="#"> <i class=" px-1 fa-brands fa-google-play"></i> Google play </a>
+                </div>
+                <h3 class="py-4">Secured Payment Gateways</h3>
+                <picture>
+                    <img src="images/payment-method.png" alt="not-found">
+                </picture>
+            </div>
+        </div>
+    </footer>
+
+    <!---------------------- copywrite part start here -------------------->
+
+    <section class="py-4">
+        <div class="container mx-auto ">
+            <div class="flex items-center justify-between">
+                <h1>© 2022, Nest - HTML Ecommerce Template <br> All rights reserved</h1>
+                <div class="flex items-center gap-x-6">
+                    <div class="flex gap-x-2 items-center">
+                        <div>
+                            <i class=" text-xl fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="gap-x-2">
+                            <span class="text-xl font-semibold text-green-500">1900 - 6666</span>
+                            <h1 class="text-gray-400 text-sm">Working 8:00 - 22:00</h1>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                        <div>
+                            <i class=" text-xl fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="gap-x-2">
+                            <span class="text-xl font-semibold text-green-500">1900 - 8888</span>
+                            <h1 class="text-gray-400 text-sm">24/7 Support Center</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="social_icon">
+                    <div class="flex gap-x-1 items-center">
+                        <p class="px-2">Follow us</p>
+                        <a href="#"><i class=" py-3 px-3 text-white bg-green-500 hover:bg-green-600 transition rounded-full text-lg fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class=" py-3 px-3 text-white bg-green-500 hover:bg-green-600 transition rounded-full text-lg fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class=" py-3 px-3 text-white bg-green-500 hover:bg-green-600 transition rounded-full text-lg fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class=" py-3 px-3 text-white bg-green-500 hover:bg-green-600 transition rounded-full text-lg fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class=" py-3 px-3 text-white bg-green-500 hover:bg-green-600 transition rounded-full text-lg fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div>
+                        <h1 class="text-green-400 font-semibold text-center">Up to 15% discount on your first subscrib</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <!------------ jquery download link ------------>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- ------------ slick slider js download link ------------- -->
+    <script src="js/slick.min.js"></script>
+    <!-- ------------- main js file ------------ -->
+    <script src="js/script.js"></script>
+    <!------------- font awesome link ------------->
+    <script src="https://kit.fontawesome.com/48bd593716.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
