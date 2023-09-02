@@ -18,7 +18,7 @@
     <header class="py-4 border-b-2 border-gray-300">
         <div class="header_wrapper container mx-auto sm:flex justify-between items-center capitalize text-gray-500">
             <div class="sm:flex sm:gap-x-5">
-                <a href="#">about us</a>
+                <a href="menu.html">about us</a>
                 <a href="#">my account</a>
                 <a href="#">whishlist</a>
                 <a href="#">order tracking</a>
@@ -29,22 +29,21 @@
             <div class="sm:flex gap-x-3">
                 <h2>Need help? Call Us: <span class="text-green-600 sm:font-bold">+ 1800 900</span></h2>
                 <ul class="sm:flex gap-x-4">
-                    <li class="relative ease-in duration-300">
-                        <a href="#">english <i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="dropdown bg-red-300 px-3 py-3 absolute top-5 left-0 opacity-0 hover:opacity-100">
-                            <li><a href=#>bangla</a></li>
-                            <li><a href=#>hindi</a></li>
-                            <li><a href=#>kuet</a></li>
+                    <li class="drop-1">
+                        <a href="#">English<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-1">
+                            <li><a href="#"> <i class="text-green-400 fa-solid fa-flag"></i>bangla</a></li>
+                            <li><a href="#"> <i class="text-red-500 fa-solid fa-flag"></i>arabic</a></li>
+                            <li><a href="#"> <i class="text-gray-400 fa-solid fa-flag"></i>chines</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">usd <i class="fa-solid fa-chevron-down"></i>
-                            <ul class="dropdown bg-red-300 px-3 py-3 absolute top-5 left-0 opacity-0">
-                                <li><a href="#">taka</a></li>
-                                <li><a href="#">ruppe</a></li>
-                                <li><a href="#">dinnar</a></li>
-                            </ul>
-                        </a>
+                    <li class="drop-2">
+                        <a href="#">usd <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-2">
+                            <li><a href="#"> <i class="text-green-400 fa-solid fa-flag"></i> taka</a></li>
+                            <li><a href="#"> <i class="text-red-500 fa-solid fa-flag"></i> ruppe</a></li>
+                            <li><a href="#"> <i class="text-gray-400 fa-solid fa-flag"></i> dinnar</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -61,17 +60,60 @@
                 </picture>
             </div>
             <div>
-                <form action="">
-                    <input class=" border-2 border-gray-300 block mx-auto sm:w-[500px] w-5/6 py-2 px-2" placeholder="search for items..." type="search">
+                <form class="flex relative">
+                    <input class=" border-2 border-gray-300 block mx-auto sm:w-[560px] w-5/6 py-2 px-2 rounded-lg" placeholder="search for items..." type="search">
+                    <i class="absolute top-4 right-5 text-xl text-gray-400 fa-solid fa-magnifying-glass"></i>
                 </form>
             </div>
             <div>
-                <ul class="sm:flex text-center gap-x-5 capitalize">
+                <ul class="sm:flex text-center gap-x-5 capitalize text-gray-500">
                     <li><a class="text-xl" href="#"><i class="fa-solid fa-location-dot text-2xl"></i> your location</a></li>
                     <li><a class="text-xl" href="#"><i class="fa-solid fa-spinner text-2xl"></i> compare</a></li>
                     <li><a class="text-xl" href="#"><i class="fa-solid fa-heart text-2xl"></i> wishlist </a></li>
-                    <li><a class="text-xl" href="#"><i class="fa-solid fa-cart-shopping text-2xl"></i> cart</a></li>
-                    <li><a class="text-xl" href="#"><i class="fa-solid fa-user text-2xl"></i> accout </a></li>
+                    <li class="cart-drop">
+                        <a class="text-xl hover:text-green-500" href="#"><i class="fa-solid fa-cart-shopping text-2xl"></i> cart</a>
+                        <ul class="cart-dropdown">
+                            <div class="flex items-center flex-col  gap-y-10">
+                                <div class="flex items-center gap-3">
+                                    <picture><img class="w-10 " src="images/product-1-1.jpg" alt="img"></picture>
+                                    <div class="flex flex-col gap-y-1">
+                                        <h1>cart-dropdown</h1>
+                                        <h1> 1* 800$</h1>
+                                    </div>
+                                    <i class="text-lg cursor-pointer hover:text-red-600 fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <picture><img class="w-10" src="images/product-1-1.jpg" alt="img"></picture>
+                                    <div class="flex flex-col gap-y-1">
+                                        <h1>cart-dropdown</h1>
+                                        <h1> 1* 800$</h1>
+                                    </div>
+                                    <i class="text-lg cursor-pointer hover:text-red-600 fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 justify-between py-10">
+                                <div class="flex flex-col">
+                                    <h1 class="text-gray-400 text-lg font-semibold">total</h1>
+                                    <a class="py-2 px-3 bg-green-400 text-white hover:bg-green-500 inline-block" href="#">view cart </a>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-gray-400 text-lg font-semibold">$4000</h1>
+                                    <a class="py-2 px-3 bg-green-400 text-white hover:bg-yellow-200 inline-block" href="#">checkout</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="account-drop">
+                        <a class="text-xl hover:text-green-500" href="#"><i class="fa-solid fa-user text-2xl"></i> account </a>
+                        <ul class="account-dropdown">
+                            <li><a href="#"><i class="fa-solid fa-user"></i> My account </a></li>
+                            <li><a href="#"><i class="fa-brands fa-first-order"></i> Order tracking</a></li>
+                            <li><a href="#"><i class="fa-solid fa-envelope-open"></i> My voucher</a></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i> My wishlist</a></li>
+                            <li><a href="#"><i class="fa-solid fa-sliders"></i> Setting</a></li>
+                            <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Signout</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -79,15 +121,15 @@
 
     <!-- ------------------------ inner nav start here --------------------- -->
 
-    <section class="py-4 innver_nav border-b-2 border-gray-300">
+    <section class="py-6 innver_nav border-b-2 border-gray-300">
         <div class="mx-auto container flex justify-between items-center">
             <div>
                 <ul class="md:flex gap-x-10 capitalize text-lg font-semibold">
-                    <li><a href="#">browse all categories <i class="fa-solid fa-chevron-down"></i> </a></li>
+                    <li><a class="py-4 px-10 rounded-md text-white bg-green-500 font-semibold hover:bg-green-600 transition-all" href="#">Brows all catagories </a></li>
                     <li><a href="#">deals </a></li>
-                    <li class=" dropdown-1 relative">
+                    <li class="drop-3">
                         <a href="#">home <i class="fa-solid fa-chevron-down"></i> </a>
-                        <ul class="py-6 pl-5 pr-28 bg-gray-200 rounded-lg z-50 absolute top-16 invisible">
+                        <ul class="dropdown-3">
                             <li><a href="#">home1</a></li>
                             <li><a href="#">home2</a></li>
                             <li><a href="#">home3</a></li>
@@ -97,9 +139,9 @@
                         </ul>
                     </li>
                     <li><a href="#">about</a></li>
-                    <li class="dropdown-2">
+                    <li class="drop-4">
                         <a href="#">shop <i class="fa-solid fa-chevron-down"></i> </a>
-                        <ul class="pr-28 pl-4 py-5 bg-gray-200 absolute z-20 invisible">
+                        <ul class=" dropdown-4">
                             <li><a href="#">shop 1</a></li>
                             <li><a href="#">shop 2</a></li>
                             <li><a href="#">shop 3</a></li>
@@ -112,9 +154,9 @@
                             <li><a href="#">shop 10</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown-3">
+                    <li class="drop-5">
                         <a href="#">verdors <i class="fa-solid fa-chevron-down"></i> </a>
-                        <ul class="pr-28 pl-4 py-5 bg-gray-200 absolute z-20 invisible">
+                        <ul class="dropdown-5">
                             <li><a href="#">verdors 1</a></li>
                             <li><a href="#">verdors 2</a></li>
                             <li><a href="#">verdors 3</a></li>
@@ -124,18 +166,37 @@
                             <li><a href="#">verdors 7</a></li>
                         </ul>
                     </li>
-                    <li class="relative z-10">
+                    <li class="drop-6">
                         <a href="#">mega menu <i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class=" opacity-0 sm:w-[1000px] h-[350px] bg-red-400 absolute top-[62px] right-[-300px]">
-                            <li><a href="#">hello world</a></li>
-                            <li><a href="#">hello world</a></li>
-                            <li><a href="#">hello world</a></li>
-                            <li><a href="#">hello world</a></li>
+                    </li>
+                    <li class="drop-7">
+                        <a href="#">blog <i class="fa-solid fa-chevron-down"></i> </a>
+                        <ul class="dropdown-7">
+                            <li><a href="#">blog 1</a></li>
+                            <li><a href="#">blog 2</a></li>
+                            <li><a href="#">blog 3</a></li>
+                            <li><a href="#">blog 4</a></li>
+                            <li><a href="#">blog 5</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">blog <i class="fa-solid fa-chevron-down"></i> </a></li>
-                    <li><a href="#">pages <i class="fa-solid fa-chevron-down"></i> </a></li>
-                    <li><a href="#">contact</a></li>
+                    <li class="drop-8">
+                        <a href="#">pages <i class="fa-solid fa-chevron-down"></i> </a>
+                        <ul class="dropdown-8">
+                            <li><a href="#">pages 1</a></li>
+                            <li><a href="#">pages 2</a></li>
+                            <li><a href="#">pages 3</a></li>
+                            <li><a href="#">pages 4</a></li>
+                            <li><a href="#">pages 5</a></li>
+                            <li><a href="#">pages 6</a></li>
+                            <li><a href="#">pages 7</a></li>
+                            <li><a href="#">pages 8</a></li>
+                            <li><a href="#">pages 9</a></li>
+                            <li><a href="#">pages 10</a></li>
+                        </ul>
+                    </li>
+                    <li class="hover:text-green-600">
+                        <a target="_blank" href="contact.html">contact</a>
+                    </li>
                 </ul>
             </div>
             <div class="flex items-center gap-x-3">
@@ -157,11 +218,11 @@
             <div>
                 <div class="relative z-20">
                     <div class="absolute px-10 capitalize mt-10">
-                        <h1 class="font-semibold text-[70px] ">dont't miss amazing <br> grocery deals </h1>
+                        <h1 class="font-semibold sm:text-[70px] ">dont't miss amazing <br> grocery deals </h1>
                         <h4 class="text-3xl text-gray-500 pt-4">sign up for the daily newspaper</h4>
-                        <div class="flex items-center justify-center relative">
-                            <input class="w-[350px] h-[60px] px-3 pl-5 block mt-8 outline-none rounded-full capitalize " placeholder="your email address" type="text">
-                            <button class=" absolute right-3 inline-block mt-9 mr-8 px-10 py-4 rounded-full text-lg font-semibold text-white bg-green-500 hover:bg-green-600 transition-all">subscribe</button>
+                        <div class="relative">
+                            <input class=" z-10 w-[400px] h-[60px] px-3 py-2 pl-5 block mt-8 border-none outline-none rounded-full capitalize " placeholder="your email address" type="text">
+                            <button class=" absolute inline-block px-10 py-4 top-0 left-[280px] rounded-full text-lg font-semibold text-white bg-green-500 hover:bg-green-600 transition-all">subscribe</button>
                         </div>
                     </div>    
                 </div>
@@ -271,7 +332,7 @@
 
     <section class="py-4"> <br>
         <div class="container mx-auto">
-            <div class="product_heading flex justify-between items-center py-4">
+            <div class="product_heading sm:flex justify-between items-center py-4">
                 <h1 class="text-4xl capitalize font-semibold">popular porduct</h1>
                 <div class="mixit_up_menu sm:flex gap-6 text-2xl capitalize cursor-pointer">
                     <p class=" text-lg hover:animate-bounce hover:text-green-500">all</p>
@@ -301,7 +362,7 @@
                         <p> (4.) </p>
                     </div>
                     <h2 class="text-lg">By NestFood</h2>
-                    <div class="price flex items-center gap-2">
+                    <div class="price sm:flex items-center gap-2 text-center">
                         <span class="text-green-500 font-bold text-lg">$32.85</span>
                         <del class="text-gray-400 font-semibold"> $55.8 </del>
                         <a class="text-sm px-4 py-2 bg-green-300 hover:bg-green-600 rounded-sm hover:animate-bounce" href="#"><i class="fa-solid fa-cart-shopping"></i> Add</a>
@@ -522,7 +583,7 @@
 
     <section class="py-4">
         <div class="container mx-auto">
-            <div class="product_heading flex justify-between items-center py-6">
+            <div class="product_heading sm:flex justify-between items-center py-6">
                 <h1 class="text-4xl capitalize font-semibold">daily best sells</h1>
                 <div class="mixit_up_menu flex gap-6 text-2xl capitalize cursor-pointer">
                     <p>features</p>
@@ -794,7 +855,10 @@
                 <div class=" px-10 capitalize mt-10">
                     <h1 class="font-semibold text-[70px] ">Stay home & get your daily needs from our shop </h1>
                     <h4 class="text-xl text-gray-500 pt-4"> Start You'r Daily Shopping with <span class="text-green-500">Nest Mart</span> </h4>
-                    <input class="w-[350px] h-[60px] px-3 pl-5 block mt-8 rounded-full capitalize " placeholder=" your email address" type="text">
+                    <div class="flex items-center relative">
+                        <input class="sm:w-[350px] h-[60px] px-3 py-2 pl-5 block mt-8 border-none outline-none rounded-full capitalize " placeholder="your email address" type="text">
+                        <button class=" absolute left-[236px] inline-block mt-8 px-10 py-4 rounded-full text-lg font-semibold text-white bg-green-500 hover:bg-green-600 transition-all">subscribe</button>
+                    </div>
                 </div>
                 <picture>
                     <img class="rounded-3xl" src="images/banner-9.png" alt="slider">
@@ -923,7 +987,7 @@
 
     <section class="py-4">
         <div class="container mx-auto ">
-            <div class="flex items-center justify-between">
+            <div class="sm:flex items-center justify-between">
                 <h1>© 2022, Nest - HTML Ecommerce Template <br> All rights reserved</h1>
                 <div class="flex items-center gap-x-6">
                     <div class="flex gap-x-2 items-center">
@@ -946,7 +1010,7 @@
                     </div>
                 </div>
                 <div class="social_icon">
-                    <div class="flex gap-x-1 items-center">
+                    <div class="sm:flex gap-x-1 items-center">
                         <p class="px-2">Follow us</p>
                         <a class="hover:animate-bounce" href="#"><i class=" py-3 px-3 text-white bg-green-500 hover:bg-green-600 transition rounded-full text-lg fa-brands fa-facebook"></i></a>
                         <a class="hover:animate-bounce" href="#"><i class=" py-3 px-3 text-white bg-green-500 hover:bg-green-600 transition rounded-full text-lg fa-brands fa-twitter"></i></a>
