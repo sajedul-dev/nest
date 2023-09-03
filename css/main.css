@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body,html{
+    scroll-behavior: unset !important;
+}
 /* ---------------------- navbar dropdown ------------------  */
 
 .account-dropdown{
